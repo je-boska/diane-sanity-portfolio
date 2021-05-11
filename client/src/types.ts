@@ -3,5 +3,5 @@ export type PostType = {
   title: string
   slug: string
   body: string
-  mainImage: string
+  image: string
 }
