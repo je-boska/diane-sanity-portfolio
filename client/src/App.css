@@ -21,12 +21,19 @@
   text-align: center;
 }
 
+.project-text h1 {
+  margin-bottom: 20px;
+}
+
 .project-images {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .project-images img {
   width: 50vw;
+  height: 50vh;
   object-fit: cover;
 }
