@@ -6,7 +6,7 @@ export const getProjects = async () => {
     groq`*[_type == "post"] {
       _id,
       title,
-      "image": mainImage.asset->url,
+      "images": imagesArray[]{ asset-> {url}},
       "slug": slug.current,
       body,
     }

@@ -21,10 +21,16 @@ const Home = () => {
     <div>
       {projects &&
         projects.map(project => (
-          <div key={project._id}>
-            <h1>{project.title}</h1>
-            <BlockContent blocks={project.body} />
-            <img src={project.image} alt={project.title} />
+          <div key={project._id} className='project'>
+            <div className='project-text'>
+              <h1>{project.title}</h1>
+              <BlockContent blocks={project.body} />
+            </div>
+            <div className='project-images'>
+              {project.images.map((image, idx) => (
+                <img key={idx} src={image.asset.url} alt={project.title} />
+              ))}
+            </div>
           </div>
         ))}
     </div>

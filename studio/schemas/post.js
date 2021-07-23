@@ -24,12 +24,10 @@ export default {
       to: { type: 'author' },
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'imagesArray',
+      title: 'Images',
+      type: 'array',
+      of: [{ type: 'image', options: { hotspot: true } }],
     },
     {
       name: 'publishedAt',
